@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Data Interpretation – XRD Facility</title>
+  <meta name="description" content="Software, databases, phase identification and peak indexing guidance for XRD data analysis." />
+  <link rel="stylesheet" href="assets/styles.css" />
+  <script src="assets/main.js"></script>
+</head>
+<body>
+
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <!-- Navigation -->
+  <nav class="site-nav" aria-label="Main navigation">
+    <div class="nav-inner">
+      <a class="nav-brand" href="index.html">⚛ XRD Facility</a>
+      <ul class="nav-links" id="nav-links" role="list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="booking.html">Booking</a></li>
+        <li><a href="learn.html">Learn</a></li>
+        <li><a href="data.html">Data Interpretation</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <button class="theme-toggle" id="theme-toggle" aria-label="Switch to dark mode">
+        <span class="icon" aria-hidden="true">🌙</span>
+        <span class="label">Dark mode</span>
+      </button>
+      <button class="nav-hamburger" id="nav-hamburger" aria-controls="nav-links" aria-expanded="false" aria-label="Open navigation menu">☰</button>
+    </div>
+  </nav>
+
+  <!-- Page header -->
+  <header class="page-header">
+    <h1>Data Interpretation</h1>
+    <p>Software, reference databases, and practical guidance for analysing your XRD patterns.</p>
+  </header>
+
+  <main id="main-content" class="page-main">
+
+    <!-- Software -->
+    <section class="section" aria-labelledby="software-heading">
+      <h2 class="section-title" id="software-heading">Analysis Software</h2>
+      <p class="section-subtitle">Commonly used tools for XRD data processing and structure analysis.</p>
+
+      <div class="content-section">
+        <h3>🖥️ Pattern Viewing &amp; Phase Matching</h3>
+        <p>These applications let you load raw diffractograms, perform background subtraction, peak fitting, and automatic phase identification against standard databases.</p>
+        <ul>
+          <li>
+            <strong>HighScore / HighScore Plus</strong> (Malvern Panalytical) — Industry-standard for phase identification, Rietveld refinement, and profile fitting. Integrates with the ICDD PDF database. <span class="tag">Commercial</span>
+          </li>
+          <li>
+            <strong>Match!</strong> (Crystal Impact) — Intuitive phase identification software supporting a wide range of databases including COD and ICDD. <span class="tag">Commercial</span>
+          </li>
+          <li>
+            <strong>DIFFRAC.EVA</strong> (Bruker) — Widely used viewer and search-match tool bundled with Bruker instruments. <span class="tag">Commercial</span>
+          </li>
+        </ul>
+      </div>
+
+      <div class="content-section">
+        <h3>⚙️ Rietveld Refinement &amp; Full-Pattern Analysis</h3>
+        <p>Rietveld refinement fits the entire diffractogram with a calculated pattern based on crystal structure models, yielding quantitative phase analysis, lattice parameters, and microstructural information.</p>
+        <ul>
+          <li>
+            <strong>GSAS-II</strong> (Argonne National Laboratory) — Powerful open-source suite for powder diffraction, single-crystal, and small-angle scattering analysis. <span class="tag">Free / Open source</span>
+          </li>
+          <li>
+            <strong>FullProf Suite</strong> — Widely adopted for neutron and X-ray Rietveld refinement, magnetic structure determination, and profile matching. <span class="tag">Free</span>
+          </li>
+          <li>
+            <strong>MAUD</strong> — Java-based software for simultaneous Rietveld and texture analysis. <span class="tag">Free</span>
+          </li>
+          <li>
+            <strong>Topas</strong> (Bruker / academic) — High-performance refinement software with advanced features including WPPM (Whole Powder Pattern Modelling). <span class="tag">Commercial</span>
+          </li>
+        </ul>
+      </div>
+
+      <div class="content-section">
+        <h3>🏗️ Crystal Structure Visualisation</h3>
+        <ul>
+          <li>
+            <strong>VESTA</strong> — 3D visualisation of crystal and electronic structures from CIF files. Freely available and highly recommended for interpreting refined structures. <span class="tag">Free</span>
+          </li>
+          <li>
+            <strong>CrystalMaker / CrystalDiffract</strong> — Interactive modelling of crystal structures and simulated diffraction patterns. <span class="tag">Commercial</span>
+          </li>
+          <li>
+            <strong>Mercury</strong> (CCDC) — Visualisation and analysis of crystal structures, particularly for organic/molecular crystals. <span class="tag">Free (basic version)</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Databases -->
+    <section class="section" aria-labelledby="databases-heading">
+      <h2 class="section-title" id="databases-heading">Reference Databases</h2>
+      <p class="section-subtitle">Where to find reference patterns for phase identification.</p>
+
+      <div class="content-section">
+        <h3>📚 Key Crystallographic Databases</h3>
+        <ul>
+          <li>
+            <strong>Crystallography Open Database (COD)</strong> — Free, open-access database of crystal structures. Integrates with GSAS-II, Match!, and other tools. Excellent starting point for common phases. <span class="tag">Free / Open</span>
+          </li>
+          <li>
+            <strong>ICDD PDF (Powder Diffraction File)</strong> — The most comprehensive commercial powder diffraction reference database (PDF-2, PDF-4+). Requires a subscription; check whether your institution has access. <span class="tag">Subscription required</span>
+          </li>
+          <li>
+            <strong>AMCSD (American Mineralogist Crystal Structure Database)</strong> — Searchable database of mineral crystal structures with free CIF downloads. Particularly useful for geological and mineralogical samples. <span class="tag">Free</span>
+          </li>
+          <li>
+            <strong>ICSD (Inorganic Crystal Structure Database)</strong> — Comprehensive database of fully determined inorganic crystal structures. Institutional subscription typically required. <span class="tag">Subscription required</span>
+          </li>
+          <li>
+            <strong>Materials Project</strong> — Open-access repository of computed material properties including crystal structures and XRD simulations. Freely accessible online. <span class="tag">Free / Open</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Phase identification -->
+    <section class="section" aria-labelledby="phase-id-heading">
+      <h2 class="section-title" id="phase-id-heading">Practical Guidance</h2>
+      <p class="section-subtitle">Step-by-step approaches for common analysis tasks.</p>
+
+      <div class="content-section">
+        <h3>🔍 Phase Identification Workflow</h3>
+        <ol style="padding-left:20px;line-height:1.9;font-size:0.95rem;">
+          <li><strong>Data quality check:</strong> Examine the raw pattern for noise, peak shapes, and background. Apply background subtraction if necessary.</li>
+          <li><strong>Peak detection:</strong> Use the software's automatic peak-finding function, then manually verify each peak position. Record d-spacings from 2θ values using Bragg's law.</li>
+          <li><strong>Search-match:</strong> Run an automated database search. Evaluate the candidate matches by comparing the top-scoring hits with your pattern, focusing on the strongest (non-overlapping) peaks.</li>
+          <li><strong>Validate the match:</strong> Confirm that all major peaks in your pattern are accounted for by the identified phase(s). Check that relative peak intensities are broadly consistent.</li>
+          <li><strong>Multi-phase samples:</strong> After identifying the dominant phase, subtract its contribution or focus on unidentified residual peaks and repeat the search for secondary phases.</li>
+          <li><strong>Quantitative phase analysis:</strong> Use Rietveld refinement (GSAS-II, FullProf) to determine weight fractions of each phase in a mixture.</li>
+        </ol>
+      </div>
+
+      <div class="content-section">
+        <h3>📐 Peak Indexing Basics</h3>
+        <p>Peak indexing assigns Miller indices (hkl) to each observed diffraction peak, confirming the crystal system and yielding accurate lattice parameters.</p>
+        <ul>
+          <li><strong>Single-phase cubic:</strong> Use systematic absences and the ratio of sin²θ values to determine the Bravais lattice (P, I, or F). Lattice parameter a = λ√(h²+k²+l²) / (2 sin θ).</li>
+          <li><strong>Lower-symmetry systems:</strong> Use dedicated indexing programs such as <em>TREOR</em>, <em>DICVOL</em>, or <em>ITO</em> (all included in FullProf suite and GSAS-II).</li>
+          <li><strong>Good indexing practice:</strong> Accurate 2θ calibration (use a standard like Si or LaB₆) is essential before attempting indexing.</li>
+          <li><strong>Systematic absences:</strong> Certain hkl reflections are absent due to lattice centering and screw axes; comparing observed absences with the International Tables for Crystallography helps determine the space group.</li>
+        </ul>
+      </div>
+
+      <div class="content-section">
+        <h3>📏 Crystallite Size and Strain</h3>
+        <p>Peak broadening beyond the instrumental contribution carries information about microstructure:</p>
+        <ul>
+          <li><strong>Scherrer equation:</strong> D = Kλ / (β cos θ), where β is the integral breadth and K ≈ 0.9. Gives a volume-weighted mean crystallite size. Only valid when broadening is purely due to size (no strain).</li>
+          <li><strong>Williamson–Hall plot:</strong> Plots β cos θ vs. sin θ to separate size and strain contributions.</li>
+          <li><strong>WPPM / Warren–Averbach:</strong> More rigorous Fourier methods available in Topas and GSAS-II for detailed microstructural analysis.</li>
+        </ul>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <p>© <span id="footer-year"></span> XRD Facility. All rights reserved. &nbsp;|&nbsp;
+      <a href="contact.html">Contact</a> &nbsp;|&nbsp;
+      <a href="booking.html">Book a Slot</a>
+    </p>
+    <script>document.getElementById('footer-year').textContent = new Date().getFullYear();</script>
+  </footer>
+
+</body>
+</html>

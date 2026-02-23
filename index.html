@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>XRD Facility</title>
+  <meta name="description" content="X-Ray Diffractometer (XRD) Facility – official portal for booking, learning, data interpretation, and contact." />
+  <link rel="stylesheet" href="assets/styles.css" />
+  <script src="assets/main.js"></script>
+</head>
+<body>
+
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <!-- Navigation -->
+  <nav class="site-nav" aria-label="Main navigation">
+    <div class="nav-inner">
+      <a class="nav-brand" href="index.html">⚛ XRD Facility</a>
+      <ul class="nav-links" id="nav-links" role="list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="booking.html">Booking</a></li>
+        <li><a href="learn.html">Learn</a></li>
+        <li><a href="data.html">Data Interpretation</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <button class="theme-toggle" id="theme-toggle" aria-label="Switch to dark mode">
+        <span class="icon" aria-hidden="true">🌙</span>
+        <span class="label">Dark mode</span>
+      </button>
+      <button class="nav-hamburger" id="nav-hamburger" aria-controls="nav-links" aria-expanded="false" aria-label="Open navigation menu">☰</button>
+    </div>
+  </nav>
+
+  <!-- Hero / Home banner -->
+  <header class="hero">
+    <h1>X-Ray Diffractometer (XRD) Facility</h1>
+    <p>A shared analytical facility providing high-quality powder X-ray diffraction services for research and industry.</p>
+    <div class="hero-buttons">
+      <a class="btn btn-primary" href="booking.html">Book a Slot</a>
+      <a class="btn btn-outline" href="learn.html">Learn about XRD</a>
+    </div>
+  </header>
+
+  <main id="main-content" class="page-main">
+
+    <!-- Quick links -->
+    <section class="section" aria-labelledby="quick-links-heading">
+      <h2 class="section-title" id="quick-links-heading">Quick Links</h2>
+      <p class="section-subtitle">Everything you need to use the XRD facility.</p>
+      <div class="cards-grid">
+        <div class="card">
+          <div class="card-icon" aria-hidden="true">📅</div>
+          <div class="card-title">Booking</div>
+          <div class="card-desc">Reserve your slot for Wednesday sessions. Only 24 slots available per week.</div>
+          <a class="card-link" href="booking.html">Book a slot →</a>
+        </div>
+        <div class="card">
+          <div class="card-icon" aria-hidden="true">🔬</div>
+          <div class="card-title">Learn about XRD</div>
+          <div class="card-desc">Understand the principles, Bragg's law, sample preparation and safety guidelines.</div>
+          <a class="card-link" href="learn.html">Start learning →</a>
+        </div>
+        <div class="card">
+          <div class="card-icon" aria-hidden="true">📊</div>
+          <div class="card-title">Data Interpretation</div>
+          <div class="card-desc">Software, databases, phase identification guidance and peak indexing basics.</div>
+          <a class="card-link" href="data.html">Explore tools →</a>
+        </div>
+        <div class="card">
+          <div class="card-icon" aria-hidden="true">📬</div>
+          <div class="card-title">Contact Us</div>
+          <div class="card-desc">Reach the facility team for queries, sample details, or technical support.</div>
+          <a class="card-link" href="contact.html">Get in touch →</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Facility overview -->
+    <section class="section" aria-labelledby="overview-heading">
+      <h2 class="section-title" id="overview-heading">Facility Overview</h2>
+      <p class="section-subtitle">What we offer and how to get started.</p>
+
+      <div class="info-box">
+        <strong>Operating schedule:</strong> The XRD instrument runs every <strong>Wednesday</strong>. A maximum of <strong>24 samples</strong> (1 slot per sample) can be accommodated per session.
+      </div>
+
+      <div class="cards-grid" style="margin-top:24px;">
+        <div class="card">
+          <div class="card-icon" aria-hidden="true">🏛️</div>
+          <div class="card-title">Institutional Users</div>
+          <div class="card-desc">Internal students and researchers enjoy priority access and subsidised rates (₹300/sample).</div>
+        </div>
+        <div class="card">
+          <div class="card-icon" aria-hidden="true">🎓</div>
+          <div class="card-title">External Academic</div>
+          <div class="card-desc">External academic collaborators are welcomed at ₹600 per sample.</div>
+        </div>
+        <div class="card">
+          <div class="card-icon" aria-hidden="true">🏭</div>
+          <div class="card-title">Industry / Non-Academic</div>
+          <div class="card-desc">Industrial and non-academic users can access the facility at ₹1200 per sample.</div>
+        </div>
+      </div>
+
+      <div class="info-box" style="margin-top:28px;">
+        <strong>Usage notes:</strong>
+        <ul style="list-style:disc;padding-left:20px;margin-top:8px;font-size:0.93rem;">
+          <li>Samples must be in powder form, well-ground and homogeneous.</li>
+          <li>A minimum sample quantity of ~50 mg is recommended.</li>
+          <li>Users are responsible for providing appropriate sample holders or mounting material.</li>
+          <li>Data is typically delivered within 2–3 working days after the measurement session.</li>
+          <li>All users must comply with the facility's safety and handling protocols.</li>
+        </ul>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <p>© <span id="footer-year"></span> XRD Facility. All rights reserved. &nbsp;|&nbsp;
+      <a href="contact.html">Contact</a> &nbsp;|&nbsp;
+      <a href="booking.html">Book a Slot</a>
+    </p>
+    <script>document.getElementById('footer-year').textContent = new Date().getFullYear();</script>
+  </footer>
+
+</body>
+</html>

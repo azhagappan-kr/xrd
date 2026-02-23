@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Booking – XRD Facility</title>
+  <meta name="description" content="Book your XRD slot for the next Wednesday session. Check availability and pricing details." />
+  <link rel="stylesheet" href="assets/styles.css" />
+  <script src="assets/main.js"></script>
+</head>
+<body>
+
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <!-- Navigation -->
+  <nav class="site-nav" aria-label="Main navigation">
+    <div class="nav-inner">
+      <a class="nav-brand" href="index.html">⚛ XRD Facility</a>
+      <ul class="nav-links" id="nav-links" role="list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="booking.html">Booking</a></li>
+        <li><a href="learn.html">Learn</a></li>
+        <li><a href="data.html">Data Interpretation</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <button class="theme-toggle" id="theme-toggle" aria-label="Switch to dark mode">
+        <span class="icon" aria-hidden="true">🌙</span>
+        <span class="label">Dark mode</span>
+      </button>
+      <button class="nav-hamburger" id="nav-hamburger" aria-controls="nav-links" aria-expanded="false" aria-label="Open navigation menu">☰</button>
+    </div>
+  </nav>
+
+  <!-- Page header -->
+  <header class="page-header">
+    <h1>Slot Booking</h1>
+    <p>Reserve your Wednesday XRD session slot. Capacity is limited to 24 samples per week.</p>
+  </header>
+
+  <main id="main-content" class="page-main">
+
+    <!-- Availability -->
+    <section class="section" aria-labelledby="availability-heading">
+      <h2 class="section-title" id="availability-heading">Upcoming Availability</h2>
+      <p class="section-subtitle">Showing the next two Wednesday sessions.</p>
+
+      <div class="info-box">
+        <strong>How it works:</strong> Each Wednesday, up to <strong>24 slots</strong> are available (1 slot = 1 sample). Click <em>Book now</em> to fill in the Microsoft Forms booking form.
+      </div>
+
+      <!-- Slot cards are rendered by main.js -->
+      <div class="availability-grid" id="availability-container" aria-live="polite">
+        <p class="text-muted">Loading availability…</p>
+      </div>
+
+      <!-- Availability legend -->
+      <div style="display:flex;gap:16px;flex-wrap:wrap;margin-top:8px;">
+        <span class="slot-badge green">🟢 12–24 available</span>
+        <span class="slot-badge yellow">🟡 6–11 available</span>
+        <span class="slot-badge red">🔴 &lt;6 available</span>
+      </div>
+    </section>
+
+    <!-- Pricing -->
+    <section class="section" aria-labelledby="pricing-heading">
+      <h2 class="section-title" id="pricing-heading">Pricing</h2>
+      <p class="section-subtitle">Per-sample charges based on user category.</p>
+      <div style="overflow-x:auto;">
+        <table class="pricing-table" aria-label="Pricing per sample by user category">
+          <thead>
+            <tr>
+              <th scope="col">User Category</th>
+              <th scope="col">Charge per Sample</th>
+              <th scope="col">Notes</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Internal Students / Researchers</td>
+              <td><strong>₹ 300</strong></td>
+              <td>Faculty and students of this institution</td>
+            </tr>
+            <tr>
+              <td>External Academic Users</td>
+              <td><strong>₹ 600</strong></td>
+              <td>Students and faculty of other academic institutions</td>
+            </tr>
+            <tr>
+              <td>Industries &amp; Non-Academic Users</td>
+              <td><strong>₹ 1200</strong></td>
+              <td>Companies, R&amp;D labs, and other non-academic entities</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- Booking instructions -->
+    <section class="section" aria-labelledby="instructions-heading">
+      <h2 class="section-title" id="instructions-heading">How to Book</h2>
+      <ol style="padding-left:20px;font-size:0.95rem;line-height:2;">
+        <li>Check availability for the desired Wednesday above.</li>
+        <li>Click <strong>Book now</strong> to open the Microsoft Forms booking form.</li>
+        <li>Fill in your details: name, institution, number of samples, and sample description.</li>
+        <li>Submit the form — you will receive a confirmation email.</li>
+        <li>Bring your prepared samples to the facility on the booked Wednesday.</li>
+      </ol>
+      <div class="info-box" style="margin-top:20px;">
+        <strong>Cancellations:</strong> Please notify the facility at least 48 hours in advance if you need to cancel, so the slot can be offered to others. See the <a href="contact.html">Contact</a> page for details.
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <p>© <span id="footer-year"></span> XRD Facility. All rights reserved. &nbsp;|&nbsp;
+      <a href="contact.html">Contact</a> &nbsp;|&nbsp;
+      <a href="index.html">Home</a>
+    </p>
+    <script>document.getElementById('footer-year').textContent = new Date().getFullYear();</script>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us – XRD Facility</title>
+  <meta name="description" content="Contact the XRD facility team for bookings, queries, and technical support." />
+  <link rel="stylesheet" href="assets/styles.css" />
+  <script src="assets/main.js"></script>
+</head>
+<body>
+
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <!-- Navigation -->
+  <nav class="site-nav" aria-label="Main navigation">
+    <div class="nav-inner">
+      <a class="nav-brand" href="index.html">⚛ XRD Facility</a>
+      <ul class="nav-links" id="nav-links" role="list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="booking.html">Booking</a></li>
+        <li><a href="learn.html">Learn</a></li>
+        <li><a href="data.html">Data Interpretation</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <button class="theme-toggle" id="theme-toggle" aria-label="Switch to dark mode">
+        <span class="icon" aria-hidden="true">🌙</span>
+        <span class="label">Dark mode</span>
+      </button>
+      <button class="nav-hamburger" id="nav-hamburger" aria-controls="nav-links" aria-expanded="false" aria-label="Open navigation menu">☰</button>
+    </div>
+  </nav>
+
+  <!-- Page header -->
+  <header class="page-header">
+    <h1>Contact Us</h1>
+    <p>Reach the facility team for booking queries, sample questions, or technical support.</p>
+  </header>
+
+  <main id="main-content" class="page-main">
+
+    <section class="section" aria-labelledby="contact-heading">
+      <h2 class="section-title" id="contact-heading">Get in Touch</h2>
+      <p class="section-subtitle">We're here to help you get the most from your XRD measurements.</p>
+
+      <div class="contact-grid">
+
+        <!-- Contact info -->
+        <div>
+          <div class="contact-info-block">
+            <h3><span aria-hidden="true">📍</span> Facility Details</h3>
+            <dl>
+              <dt>Facility Name</dt>
+              <dd>X-Ray Diffractometer (XRD) Facility</dd>
+
+              <dt>Location</dt>
+              <dd>Department of [Department Name]<br />
+                  [Building Name], Room [Room No.]<br />
+                  [Institution Name]<br />
+                  [City, State – PIN Code]
+              </dd>
+
+              <dt>Email</dt>
+              <dd><a href="mailto:xrd-facility@institution.ac.in">xrd-facility@institution.ac.in</a></dd>
+
+              <dt>Phone</dt>
+              <dd>+91 [Phone Number]</dd>
+            </dl>
+          </div>
+
+          <div class="contact-info-block" style="margin-top:20px;">
+            <h3><span aria-hidden="true">🕐</span> Office Hours</h3>
+            <dl>
+              <dt>Monday – Friday</dt>
+              <dd>9:00 AM – 5:00 PM</dd>
+
+              <dt>XRD Measurements</dt>
+              <dd>Every Wednesday (during term)</dd>
+
+              <dt>Sample Drop-off</dt>
+              <dd>Monday &amp; Tuesday, 9:00 AM – 4:00 PM</dd>
+
+              <dt>Data Collection</dt>
+              <dd>Results delivered within 2–3 working days</dd>
+
+              <dt>Public Holidays</dt>
+              <dd>Facility closed — sessions rescheduled on request</dd>
+            </dl>
+          </div>
+
+          <div class="contact-info-block" style="margin-top:20px;">
+            <h3><span aria-hidden="true">👤</span> Key Personnel</h3>
+            <dl>
+              <dt>Facility Manager / Instrument In-charge</dt>
+              <dd>[Name], [Designation]<br />
+                  <a href="mailto:manager@institution.ac.in">manager@institution.ac.in</a>
+              </dd>
+
+              <dt>Faculty Coordinator</dt>
+              <dd>Prof. [Name], [Department]<br />
+                  <a href="mailto:coordinator@institution.ac.in">coordinator@institution.ac.in</a>
+              </dd>
+            </dl>
+          </div>
+        </div>
+
+        <!-- Contact form -->
+        <div>
+          <div class="contact-form">
+            <h3><span aria-hidden="true">✉️</span> Send a Message</h3>
+            <p class="text-muted" style="font-size:0.88rem;margin-bottom:16px;">
+              Fill out the form below and we'll get back to you by email. Alternatively, use the booking form for slot requests.
+            </p>
+
+            <form id="contact-form" action="#" novalidate>
+              <div class="form-group">
+                <label for="cf-name">Full Name <span aria-label="required">*</span></label>
+                <input type="text" id="cf-name" name="name" required autocomplete="name" placeholder="Your full name" />
+              </div>
+
+              <div class="form-group">
+                <label for="cf-email">Email Address <span aria-label="required">*</span></label>
+                <input type="email" id="cf-email" name="email" required autocomplete="email" placeholder="you@example.com" />
+              </div>
+
+              <div class="form-group">
+                <label for="cf-institution">Institution / Organisation</label>
+                <input type="text" id="cf-institution" name="institution" autocomplete="organization" placeholder="Your institution or company" />
+              </div>
+
+              <div class="form-group">
+                <label for="cf-subject">Subject <span aria-label="required">*</span></label>
+                <select id="cf-subject" name="subject" required>
+                  <option value="" disabled selected>Select a subject…</option>
+                  <option value="booking">Booking enquiry</option>
+                  <option value="technical">Technical / sample question</option>
+                  <option value="pricing">Pricing &amp; invoicing</option>
+                  <option value="results">Data / results query</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="cf-message">Message <span aria-label="required">*</span></label>
+                <textarea id="cf-message" name="message" required placeholder="Describe your query in detail…"></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-action" style="width:100%;justify-content:center;">
+                Send Message
+              </button>
+
+              <p class="form-notice" id="form-status" role="alert" aria-live="polite"></p>
+            </form>
+
+            <p class="form-notice" style="margin-top:12px;">
+              This form opens your default email client with the details pre-filled. No data is sent to a server directly.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <p>© <span id="footer-year"></span> XRD Facility. All rights reserved. &nbsp;|&nbsp;
+      <a href="booking.html">Book a Slot</a> &nbsp;|&nbsp;
+      <a href="index.html">Home</a>
+    </p>
+    <script>document.getElementById('footer-year').textContent = new Date().getFullYear();</script>
+  </footer>
+
+  <script>
+    // Simple mailto fallback for contact form
+    document.getElementById('contact-form').addEventListener('submit', function (e) {
+      e.preventDefault();
+      var name       = document.getElementById('cf-name').value.trim();
+      var email      = document.getElementById('cf-email').value.trim();
+      var institution= document.getElementById('cf-institution').value.trim();
+      var subject    = document.getElementById('cf-subject').value;
+      var message    = document.getElementById('cf-message').value.trim();
+      var status     = document.getElementById('form-status');
+
+      if (!name || !email || !subject || !message) {
+        status.textContent = 'Please fill in all required fields.';
+        status.style.color = 'var(--color-danger)';
+        return;
+      }
+
+      var body = 'Name: ' + name + '\nEmail: ' + email + '\nInstitution: ' + institution + '\n\n' + message;
+      var mailtoLink = 'mailto:xrd-facility@institution.ac.in'
+        + '?subject=' + encodeURIComponent('[XRD Website] ' + subject)
+        + '&body=' + encodeURIComponent(body);
+
+      window.location.href = mailtoLink;
+      status.textContent = 'Opening your email client…';
+      status.style.color = 'var(--color-success)';
+    });
+  </script>
+
+</body>
+</html>
